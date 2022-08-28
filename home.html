@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <main>
+            <h3> Defina os Não terminais </h3>
+            <input oninput="this.value = this.value.toUpperCase()" type="text" name="nao-terminais" id="nao-terminais" maxlength="1" />
+            <button onclick="setaDadosNaoTerminais()"> Salvar </button>
+            
+            <h3> Defina os Terminais </h3>
+            <input oninput="this.value = this.value.toLowerCase()" type="text" name="terminais" id="terminais" maxlength="1" />
+            <button onclick="setaDadosTerminais()"> Salvar </button>
+            
+            <h3> Defina o Não terminal de Start </h3>
+            <input oninput="this.value = this.value.toUpperCase()" type="text" name="start" id="start" maxlength="1" />
+            <button onclick="setaStart()"> Salvar </button>
+
+            <section>
+                <h4> Lista de Não terminais </h4>
+                <ul id="lista-nao-terminais"></ul>
+                
+                <h4> Lista de Terminais </h4>
+                <ul id="lista-terminais"></ul>
+            </section>
+            <!--Criar aqui automáticamente após salvar uma regra-->
+            <section id="gerar-section">
+                <button onclick="gerarSentenca()"> Gerar Sentença </button>
+                <ul id="lista-sentencas"></ul>
+            </section>
+            
+        </main>
+
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="algoritmos.js"></script>
+    </body>
+</html>
