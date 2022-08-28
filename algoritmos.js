@@ -31,7 +31,7 @@ function gerarSentenca() {
             }
         }
     })
-    let elementoDeS = selecionarAleatorio("S")
+    let elementoDeS = selecionarAleatorio(S)
 
     let itemLista = document.createElement('li')
     sentenca = iterarPilha(elementoDeS)
