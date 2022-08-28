@@ -17,6 +17,11 @@ function gerarSentenca() {
 
     // Selecione um elemento aleatório do S para iniciar a sentença
     elementosDeS = NComRegra[S]
-    sentencaInicial = elementosDeS[Math.floor(Math.random() * elementosDeS.length)].split('').reverse()
-    
+    sentencaInicial = elementosDeS[Math.floor(Math.random() * elementosDeS.length)].split('')
+    for (var i = 0; i < check.length; i++) {
+        if (arr.indexOf(check[i]) > -1) {
+            found = true;
+            break;
+        }
+    }
 }
