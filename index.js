@@ -61,6 +61,8 @@ function setaStart() {
             S = valor;
         }
     })
+
+    document.getElementById('start-variavel').innerHTML = `Start - ${valor}`
     
     if(!verificacao && this.verificaSeVazio(item)) {
         
@@ -88,7 +90,7 @@ function listarNaoTerminais() {
         itemInput.id = `producao-${item}`
         itemInput.setAttribute("id", `regra-nao-terminal-${item}`)
         
-        itemButton.textContent = 'Salvar'
+        itemButton.textContent = 'Verificar'
         itemButton.addEventListener("click", () => {
             verificaProducao(itemInput)
         }) // Com função lambda ele não roda ao ser chamado inicialmente

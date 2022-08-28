@@ -17,11 +17,13 @@
             <button onclick="setaDadosTerminais()"> Salvar </button>
             
             <h3> Defina o Não terminal de Start </h3>
+            <p id="start-variavel"></p>
             <input oninput="this.value = this.value.toUpperCase()" type="text" name="start" id="start" maxlength="1" />
             <button onclick="setaStart()"> Salvar </button>
 
             <section>
                 <h4> Lista de Não terminais </h4>
+                <p><small>Separe os valores por um espaço, # para vazio</small> </p>
                 <ul id="lista-nao-terminais"></ul>
                 
                 <h4> Lista de Terminais </h4>
